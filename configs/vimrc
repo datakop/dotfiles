@@ -1,0 +1,53 @@
+syntax enable
+set background=dark
+
+set number
+set tabstop=4
+set hlsearch		
+set nowrap				
+
+
+
+" Show hidden characters
+set listchars=tab:>-,trail:~,extends:>,precedes:<
+set list
+
+" Show/hide line numbers
+map <F1> :set invnumber<CR>
+imap <F1> <ESC>:set invnumber<CR>
+vmap <F1> <ESC>:set invnumber<CR>
+
+" Save file
+nmap <F2> :w!<CR>
+imap <F2> <Esc>:w!<CR>
+vmap <F2> <Esc>:w!<CR>
+
+" Show hidden characters
+nmap <F3> :set list!<CR>
+imap <F3> <Esc>:set list!<CR>
+vmap <F3> <Esc>:set list!<CR>
+
+" Switch buffers
+set switchbuf=usetab
+nnoremap <C-s> :sbnext<CR>
+nnoremap <C-a> :sbprev<CR>
+
+" Close vim
+nmap <F4> :q!<CR>
+imap <F4> <Esc>:q!<CR>
+vmap <F4> <Esc>:q!<CR>
+
+" Paste indents  toggle
+nnoremap <F5> :set invpaste paste?<CR>
+set pastetoggle=<F5>
+set showmode
+
+" Replace tabulation symbols to the spaces
+map <F8> :retab<CR>
+imap <F8> <Esc>:retab<CR>
+vmap <F8> <Esc>:retab<CR>
+
+" Make
+nmap <F9> :!make<CR>
+imap <F9> <Esc>:!make<CR>
+vmap <F9> <Esc>:!make<CR>

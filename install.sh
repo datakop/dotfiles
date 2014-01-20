@@ -17,7 +17,7 @@ USER_HOME=$(eval echo ~${SUDO_USER})
 configs=$BASE_DIR/configs 
 host_archive="$BASE_DIR/archive/$USERNAME-$THISHOST" 
 
-config_files="vimrc vim"    # list of files/folders to symlink in homedir
+config_files="vimrc vim zshrc bashrc gitconfig"    # list of files/folders to symlink in homedir
 
 function log()
 {
